@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 10px;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  @apply bg-gray-200;
+}
+
+#home-layout-outlet {
+  height: calc(100vh - 84px);
+  overflow-y: auto
+}
+
+#sidebar .active {
+  @apply bg-purple-700 text-white;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
